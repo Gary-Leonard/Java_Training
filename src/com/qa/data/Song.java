@@ -1,6 +1,6 @@
 package com.qa.data;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import java.util.Objects;
 
@@ -10,20 +10,20 @@ public class Song {
     private String title;
     private String artist;
     private int runtime;
-    private LocalDateTime releaseDate;
+    private LocalDate releaseDate;
 
     public Song() {
 
     }
 
-    public Song(String title, String artist, int runtime, LocalDateTime releaseDate) {
+    public Song(String title, String artist, int runtime, LocalDate releaseDate) {
         this.title = title;
         this.artist = artist;
         this.runtime = runtime;
         this.releaseDate = releaseDate;
     }
 
-    public Song(int id, String title, String artist, int runtime, LocalDateTime releaseDate) {
+    public Song(int id, String title, String artist, int runtime, LocalDate releaseDate) {
         this.id = id;
         this.title = title;
         this.artist = artist;
@@ -63,11 +63,11 @@ public class Song {
         this.runtime = runtime;
     }
 
-    public LocalDateTime getReleaseDate() {
+    public LocalDate getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(LocalDateTime releaseDate) {
+    public void setReleaseDate(LocalDate releaseDate) {
         this.releaseDate = releaseDate;
     }
 
