@@ -25,8 +25,8 @@ public class App {
         System.out.println(dao.readById(2));
 
         System.out.println("Saving new song");
-        Song song4 = new Song(4, "Operation Blade", "Public Domain", 187,
-                LocalDate.of(2000,11,20));
+        Song song4 = new Song(4, "Hells Bells", "ACDC", 300,
+                LocalDate.now());
         dao.save(song4);
 
         System.out.println("READ ALL SONGS:");
